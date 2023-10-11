@@ -97,6 +97,8 @@ def celeb():
         except instagrapi.exceptions.UserNotFound:
                 print("\n\033[31m[>] User Not Found !")
 
+sleep(600)
+
 def celeb_un():
         try:
                 user_id = api.user_id_from_username("iamduzz0909")
@@ -126,15 +128,7 @@ print("\033[91m[3]  Exit\n")
 opt = int(input("\033[36mYour Option : "))
 print("\n\033[92m[+] Request Accepted\n")
 
-if opt == 1:
-	celeb()
 
-elif opt == 2:
-	celeb_un()
-
-elif opt == 3:
-	print("\n\033[36m[~] Thank You For Using !!\n")
-	sys.exit()
 
 else:
 	print("Incorrect Option !!\n")
